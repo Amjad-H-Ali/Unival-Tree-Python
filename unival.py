@@ -17,8 +17,14 @@ root.left.left = Tree(5)
 root.left.right = Tree(5)
 root.right.right = Tree(5)
 
-print(root.value)	
+def count_univals (root):
+	if (root == None):
+		return(0, True)
 
 
 
+
+
+left_count, isUnival = count_univals(root.left.left.left)
+print(left_count, isUnival)
 
