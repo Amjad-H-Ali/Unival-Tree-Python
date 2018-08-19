@@ -18,11 +18,18 @@ root.left.right = Tree(5)
 root.right.right = Tree(5)
 
 def count_univals (root):
+	# If the root does not exist
 	if (root == None):
 		return(0, True)
+
 	left_count, left_unival = count_univals(root.left)
 	
-	right_count, right_unival = count_univals(root.right)	
+	right_count, right_unival = count_univals(root.right)
+
+	
+	is_unival = True
+
+
 
 
 
