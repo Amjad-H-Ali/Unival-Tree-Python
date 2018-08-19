@@ -17,6 +17,11 @@ root.left.left = Tree(5)
 root.left.right = Tree(5)
 root.right.right = Tree(5)
 
+# Wrapper function
+def how_many_univals (root):
+	total_count, unival = count_univals(root)
+	return total_count
+
 def count_univals (root):
 	# If the root does not exist
 	if (root == None):
