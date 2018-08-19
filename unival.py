@@ -11,11 +11,12 @@ class Tree:
 
 # Instance of Tree Class (Our Node)
 root = Tree(5)
-root.left = Tree(1)
+root.left = Tree(4)
 root.right = Tree(5)
-root.left.left = Tree(5)
-root.left.right = Tree(5)
+root.left.left = Tree(4)
+root.left.right = Tree(4)
 root.right.right = Tree(5)
+
 
 # Wrapper function
 def how_many_univals (root):
@@ -49,6 +50,6 @@ def count_univals (root):
 		return (left_count + right_count, False)	
 		
 
-
+print(how_many_univals (root))
 
 
