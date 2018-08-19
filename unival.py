@@ -39,6 +39,9 @@ def count_univals (root):
 	# If still unival then add all the child branches that were unival and plus one for the tree itself
 	if (is_unival):
 		return (left_count + right_count + 1, True)
+	# Else, just add the children roots	
+	else:
+		return (left_count + right_count, False)	
 		
 
 
