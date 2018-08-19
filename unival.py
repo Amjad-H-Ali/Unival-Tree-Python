@@ -26,8 +26,11 @@ def count_univals (root):
 	
 	right_count, right_unival = count_univals(root.right)
 
-	
+
 	is_unival = True
+	# If the left root exist and does not equal root, then not unival
+	if (root.left and root.left.value != root.value):
+		is_unival = False
 
 
 
