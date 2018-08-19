@@ -27,7 +27,7 @@ def count_univals (root):
 
 	# Assume is unival until one of the following coditions tells us otherwise
 	is_unival = True
-	# if the left root does not equal right root, not unival
+	# If the left root does not equal right root, not unival
 	if (not left_unival or not right_unival ):
 		is_unival = False
 	# If the left root exist and does not equal root, then not unival
@@ -36,6 +36,10 @@ def count_univals (root):
 	# If the right root exist and does not equal root, then not unival
 	if (root.right and root.right.value != root.value):
 		is_unival = False
+	# If still unival then add all the child branches that were unival and plus one for the tree itself
+	if (is_unival):
+		return (left_count + right_count + 1, True)
+		
 
 
 
